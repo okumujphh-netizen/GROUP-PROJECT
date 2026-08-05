@@ -1,0 +1,195 @@
+.about{
+    background:#fff;
+    max-width:1100px;
+    margin:0 auto;
+    padding:50px;
+    border-radius:15px;
+    border-top:6px solid #0b6623;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:0.3s;
+    overflow:hidden;
+}
+
+.about:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+.about a{
+    color:#0b6623;
+    font-weight:600;
+}
+
+.about a:hover{
+    color:#ffd700;
+}
+
+
+.about h2{
+    color: #0b6623;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.about h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ffd700;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.about h3::before{
+    content: "⚽ ";
+}
+.about h3{
+    color: #0b6623;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h3::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffd700;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+.about p{
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #ffd700;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+}
+
+.about p:first-of-type{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about ul{
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    border-left: 5px solid #0b6623;
+}
+
+.about li{
+    background: #f8f8f8;
+    border-left: 5px solid #0b6623;
+    padding: 12px 18px 12px 45px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.about li::before{
+    content: "⚽";
+    position: absolute;
+    left: 15px;
+}
+
+.about li:hover{
+    background: #eaf7ec;
+    transform: translateX(5px);
+}
+
+.about li::marker{
+    color: #0b6623;
+}
+/* Training Schedule Table */
+
+.about table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about table th{
+    background-color: #0b6623;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.about table td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.about table tr:nth-child(even){
+    background-color: #f8f8f8;
+}
+
+.about table tr:hover td{
+    background-color: #eaf7ec;
+    transition: 0.3s;
+}
+
+.about table td:first-child{
+    font-weight: 600;
+    color: #0b6623;
+}
+
+/* Footer */
+footer{
+    background: linear-gradient(135deg, #0b6623, #087830);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+::selection{
+    background:#0b6623;
+    color:white;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about{
+        padding: 30px 20px;
+    }
+
+    .about h2{
+        font-size: 1.8rem;
+    }
+
+    .about h3{
+        font-size: 1.2rem;
+    }
+
+    .about p,
+    .about li{
+        font-size: 0.95rem;
+    }
+
+}
+   
