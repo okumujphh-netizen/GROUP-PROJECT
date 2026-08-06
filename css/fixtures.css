@@ -1,0 +1,279 @@
+/* ===========================
+   FIXTURES HERO
+=========================== */
+
+.fixtures-hero{
+    background:linear-gradient(rgba(11,102,35,.8), rgba(11,102,35,.8)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.fixtures-hero h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.fixtures-hero p{
+    font-size:1.1rem;
+}
+.fixtures-hero h2{
+    color:gold;
+}
+.fixtures-hero p{
+    color:whitesmoke;
+}
+
+/* ===========================
+   SCHEDULE SEARCH BAR
+=========================== */
+
+.schedule-search{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.schedule-search input{
+
+    width:450px;
+    max-width:90%;
+
+    padding:15px 25px;
+
+    font-size:16px;
+
+    border:none;
+    border-radius:35px;
+
+    outline:none;
+
+    background:#fff;
+
+    color:#333;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    transition:0.3s ease;
+
+}
+
+
+.schedule-search input::placeholder{
+
+    color:#777;
+
+}
+
+
+.schedule-search input:focus{
+
+    width:500px;
+
+    box-shadow:0 0 15px rgba(255,255,255,0.7);
+
+}
+
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.fixtures,
+.cup-fixtures,
+.schedule,
+.objectives,
+.next-match-banner{
+    padding:60px 8%;
+}
+
+.fixtures h2,
+.cup-fixtures h2,
+.schedule h2,
+.objectives h2,
+.next-match-banner h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#0b6623;
+}
+
+/* ===========================
+   FIXTURE CARDS
+=========================== */
+
+.fixtures-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.fixture-card{
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.fixture-card:hover{
+    transform:translateY(-8px);
+}
+
+.fixture-card h3{
+    color:#0b6623;
+    margin-bottom:20px;
+}
+
+.fixture-card p{
+    margin:8px 0;
+    color:#555;
+}
+
+/* ===========================
+   TEAMS
+=========================== */
+
+.teams{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.teams h4{
+    color:#222;
+}
+
+.teams span{
+    font-weight:bold;
+    color:#0b6623;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+th{
+    background:#0b6623;
+    color:#fff;
+    padding:15px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+tr:hover{
+    background:#e8f5e9;
+}
+
+/* ===========================
+   SEASON OBJECTIVES
+=========================== */
+
+.objectives{
+    padding:70px 8%;
+    background:#f8f9fa;
+    text-align:center;
+}
+
+.objectives h2{
+    color:#0b6623;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.objectives ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+    padding:0;
+    margin:0;
+}
+
+.objectives li{
+    background:#fff;
+    padding:30px 20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    border-top:5px solid #0b6623;
+    font-size:18px;
+    font-weight:600;
+    color:#333;
+    transition:0.3s ease;
+}
+
+.objectives li:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+/* ===========================
+   NEXT MATCH BANNER
+=========================== */
+
+.next-match-banner{
+    background:linear-gradient(rgba(11,102,35,.9), rgba(11,102,35,.9));
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+    margin:60px 0;
+    border-radius:12px;
+}
+
+.next-match-banner h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.next-match-banner h3{
+    font-size:2.2rem;
+    margin-bottom:15px;
+}
+
+.next-match-banner p{
+    font-size:1.1rem;
+    margin:10px 0;
+    color:#f1f1f1;
+}
+
+.next-match-banner .btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#fff;
+    color:#0b6623;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.next-match-banner .btn:hover{
+    background:#e8e8e8;
+    transform:translateY(-3px);
+}
+
+
+
+
