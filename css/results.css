@@ -4,16 +4,19 @@
 
 .results-hero{
 
-    background:linear-gradient(
-        rgba(11,102,35,.85),
-        rgba(11,102,35,.85)
-    );
+    background:
+        linear-gradient(
+            rgba(11,102,35,.85),
+            rgba(11,102,35,.85)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10")
+        center/cover no-repeat;
 
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-    border-radius:15px;
-    margin:20px;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px;
 
 }
 
