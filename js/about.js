@@ -39,7 +39,8 @@ questions.forEach(function(button) {
 
 let countdown = document.getElementById("countdown");
 
-let matchDate = new Date("December 31, 2026 15:00:00").getTime();
+
+let matchDate = new Date("August 15, 2026 15:00:00").getTime();
 
 console.log("Countdown timer started");
 
@@ -146,14 +147,3 @@ closeBtn.onclick = function(){
 }
 
 
-// ====================
-// 6. Welcome Message
-// ====================
-
-window.onload = function(){
-
-    console.log("Page loaded successfully");
-
-    alert("Welcome to Victory Football Club!");
-
-}

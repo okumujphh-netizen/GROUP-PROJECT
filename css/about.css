@@ -103,6 +103,29 @@
     display: inline-block;
     margin-top: 15px;
 }
+/* Welcome-Banner*/
+.welcome-banner{
+    background: linear-gradient(rgba(11,102,35,.8),rgba(11,102,35,.8)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin:20px auto;
+    border-radius:10px;
+    max-width:1000px;
+}
+
+.welcome-banner h2{
+    margin-bottom:10px;
+    color:gold;
+   
+}
+
+.welcome-banner p{
+    margin:0;
+    font-size:1.05rem;
+    color:whitesmoke;
+}
 
 /* Footer */
 
@@ -150,35 +173,71 @@ footer p{
    FAQ SECTION
 =========================== */
 
-.faq-section {
-    margin-top: 50px;
+.faq-section{
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
 }
 
-.faq {
-    margin-bottom: 15px;
+.faq-section h2{
+    text-align: center;
+    color: #0b6623;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
-.faq-btn {
+.faq{
+    margin-bottom: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    background: #fff;
+}
+
+.faq-btn{
     width: 100%;
     background: #0b6623;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 15px;
+    padding: 18px 20px;
     text-align: left;
     font-size: 17px;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background .3s ease;
 }
 
-.faq-btn:hover {
-    background: #094d1a;
+.faq-btn:hover{
+    background: #14833b;
 }
 
-.answer {
+.answer{
     display: none;
-    background: #f9f9f9;
-    padding: 15px;
-    border-left: 4px solid #0b6623;
+    padding: 18px 20px;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.7;
+    border-top: 1px solid #ddd;
+}
+
+/* Dark Mode */
+.dark-mode .faq{
+    background: #1f1f1f;
+}
+
+.dark-mode .faq-btn{
+    background: #14833b;
+    color: #fff;
+}
+
+.dark-mode .faq-btn:hover{
+    background: #0b6623;
+}
+
+.dark-mode .answer{
+    background: #2b2b2b;
+    color: #f1f1f1;
+    border-top: 1px solid #444;
 }
 
 
@@ -186,87 +245,282 @@ footer p{
    COUNTDOWN TIMER
 =========================== */
 
-#countdown {
-    background: #0b6623;
-    color: white;
-    padding: 18px;
+#countdown{
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg,#0b6623,#14833b);
+    color: #fff;
     text-align: center;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 20px 0 40px;
-    border-radius: 8px;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    border: 3px solid #ffd700;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+#countdown:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+}
+
+/* Optional heading above countdown */
+.countdown-section h2{
+    text-align: center;
+    color: #0b6623;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Dark Mode */
+.dark-mode #countdown{
+    background: linear-gradient(135deg,#1f1f1f,#2e2e2e);
+    color: #ffd700;
+    border-color: #0b6623;
 }
 
 
 /* ===========================
-   TESTIMONIALS
+   Testimonials
 =========================== */
 
-.testimonials {
-    margin-top: 50px;
-    text-align: center;
+.testimonials{
+    margin:60px auto;
+    text-align:center;
+    max-width:800px;
 }
 
-.testimonial {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 12px rgba(0,0,0,.1);
-    margin-bottom: 20px;
+.testimonials h2{
+    color:#0b6623;
+    margin-bottom:30px;
+    font-size:2rem;
 }
 
-.testimonial p {
-    font-style: italic;
-    font-size: 18px;
+.testimonial{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:transform .3s ease, box-shadow .3s ease;
 }
 
-.testimonial h4 {
-    margin-top: 15px;
-    color: #0b6623;
+.testimonial:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
+
+.testimonial p{
+    font-size:18px;
+    line-height:1.8;
+    font-style:italic;
+    color:#555;
+}
+
+.testimonial h4{
+    margin-top:20px;
+    color:#0b6623;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* ===========================
+   Navigation Buttons
+=========================== */
 
 #prev,
-#next {
-    padding: 10px 18px;
-    margin: 10px;
-    background: #0b6623;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+#next{
+    margin:25px 10px 0;
+    padding:12px 25px;
+    background:#0b6623;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:all .3s ease;
 }
 
 #prev:hover,
-#next:hover {
-    background: #094d1a;
+#next:hover{
+    background:#ffd700;
+    color:#0b6623;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+#prev:active,
+#next:active{
+    transform:scale(.96);
+}
+
+
+/* ===========================
+   History Button
+=========================== */
+
+#historyBtn{
+    display:block;
+    margin:30px auto;
+    padding:14px 28px;
+    background:#0b6623;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#historyBtn:hover{
+    background:#ffd700;
+    color:#0b6623;
+    transform:translateY(-3px);
+}
+
+
+/* ===========================
+   Modal Background
+=========================== */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.65);
+}
+
+
+/* ===========================
+   Modal Box
+=========================== */
+
+.modal-content{
+    background:white;
+    width:70%;
+    max-width:700px;
+    margin:8% auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    position:relative;
+    animation:popup .4s ease;
+}
+
+.modal-content h2{
+    color:#0b6623;
+    margin-bottom:20px;
+    text-align:center;
+    border-bottom:3px solid #ffd700;
+    padding-bottom:10px;
+}
+
+.modal-content p{
+    color:#444;
+    line-height:1.8;
+    text-align:justify;
+    font-size:17px;
+}
+
+
+/* ===========================
+   Close Button
+=========================== */
+
+.close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:32px;
+    color:#888;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.close:hover{
+    color:red;
+    transform:rotate(90deg);
+}
+
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .modal-content{
+        width:90%;
+        padding:25px;
+    }
+
 }
 
 
 /* ===========================
    BACK TO TOP
 =========================== */
-
-#topBtn {
+#topBtn{
     display: none;
     position: fixed;
     bottom: 25px;
     right: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
     background: #0b6623;
     color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     cursor: pointer;
-    font-size: 22px;
-    box-shadow: 0 5px 12px rgba(0,0,0,.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    transition: all .3s ease;
+    z-index: 1000;
 }
 
-#topBtn:hover {
-    background: #094d1a;
+#topBtn:hover{
+    background: #ffd700;
+    color: #0b6623;
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 12px 25px rgba(0,0,0,.4);
 }
 
+#topBtn:active{
+    transform: scale(.95);
+}
 
+html{
+    scroll-behavior: smooth;
+}
 /* ===========================
    MODAL
 =========================== */
