@@ -1,0 +1,495 @@
+/* ===========================
+   NEWS HERO
+=========================== */
+
+.news-hero{
+
+    background:linear-gradient(
+        rgba(11,102,35,.85),
+        rgba(11,102,35,.85)
+    );
+
+    color:white;
+    text-align:center;
+
+    padding:80px 20px;
+
+    border-radius:15px;
+
+    margin:20px;
+
+}
+
+
+.news-hero h2{
+
+    font-size:42px;
+    margin-bottom:15px;
+    color:whitesmoke;
+
+}
+
+
+.news-hero p{
+
+    font-size:18px;
+    color:gold;
+
+}
+
+
+
+/* ===========================
+   GENERAL SECTIONS
+=========================== */
+
+section{
+
+    padding:50px 8%;
+
+}
+
+
+section h2{
+
+    text-align:center;
+
+    color:#0b6623;
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* ===========================
+   NEWS CONTAINERS
+=========================== */
+
+.news-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ===========================
+   NEWS CARDS
+=========================== */
+
+.news-card,
+.featured-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+
+.news-card{
+
+    width:320px;
+
+}
+
+
+.featured-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+.news-card:hover,
+.featured-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.news-card h3,
+.featured-card h3{
+
+    color:#0b6623;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.news-card p,
+.featured-card p{
+
+    line-height:1.7;
+
+}
+
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#0b6623;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#064d1a;
+
+}
+
+
+
+/* ===========================
+   MANAGER COMMENTS
+=========================== */
+
+.manager-comments{
+
+    text-align:center;
+
+}
+
+
+.manager-comments blockquote{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#f4f4f4;
+
+    padding:35px;
+
+    border-left:6px solid #0b6623;
+
+    border-radius:10px;
+
+    font-style:italic;
+
+    font-size:18px;
+
+}
+
+
+
+/* ===========================
+   TICKET INFORMATION
+=========================== */
+
+.ticket-news ul{
+
+    max-width:400px;
+
+    margin:20px auto;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ===========================
+   NEWSLETTER SECTION
+=========================== */
+
+.newsletter{
+
+    background:#0b6623;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 30px;
+
+    margin:50px auto;
+
+    width:80%;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+.newsletter h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+.newsletter p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    max-width:700px;
+
+    margin:15px auto;
+    
+    color:gold;
+
+}
+
+
+/* Form layout */
+
+.newsletter form{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* Email input */
+
+.newsletter input{
+
+    width:350px;
+
+    max-width:90%;
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+
+/* Input focus */
+
+.newsletter input:focus{
+
+    box-shadow:0 0 0 3px rgba(255,255,255,.4);
+
+}
+
+
+
+/* Subscribe button */
+
+.newsletter .btn{
+
+    background:white;
+
+    color:#0b6623;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.newsletter .btn:hover{
+
+    background:#e8e8e8;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* Validation message */
+
+#message{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.newsletter{
+
+    width:90%;
+
+    padding:35px 20px;
+
+}
+
+
+.newsletter form{
+
+    flex-direction:column;
+
+}
+
+
+.newsletter input{
+
+    width:100%;
+
+}
+
+
+.newsletter .btn{
+
+    width:200px;
+
+}
+
+
+}
+
+/* ===========================
+   QUICK LINKS
+=========================== */
+
+.services-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.service-card{
+
+    background:white;
+
+    padding:25px;
+
+    width:300px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+
+.news-hero h2{
+
+    font-size:30px;
+
+}
+
+
+section{
+
+    padding:35px 5%;
+
+}
+
+
+.news-card,
+.featured-card{
+
+    width:100%;
+
+}
+
+
+.newsletter{
+
+    margin:30px 5%;
+
+}
+
+
+}
