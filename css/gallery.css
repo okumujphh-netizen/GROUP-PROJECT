@@ -1,0 +1,489 @@
+/* ==========================
+   GALLERY PAGE
+========================== */
+
+body {
+    background: #f4f7f5;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    background:
+        linear-gradient(rgba(11, 102, 35, .85),
+            rgba(11, 102, 35, .85)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
+
+    color: #fff;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.hero h2 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    color:gold;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+    color:whitesmoke;
+}
+
+/* ==========================
+   ALL GALLERY SECTIONS
+========================== */
+
+.matchday-gallery,
+.team-training,
+.team-celebrations,
+.fans-supporters,
+.youth-academy,
+.community-events,
+section:last-of-type {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.matchday-gallery h2,
+.team-training h2,
+.team-celebrations h2,
+.fans-supporters h2,
+.youth-academy h2,
+.community-events h2,
+section:last-of-type h2 {
+    text-align: center;
+    color: #0b6623;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.matchday-gallery>p,
+.team-training>p,
+.team-celebrations>p,
+.fans-supporters>p,
+.youth-academy>p,
+.community-events>p,
+section:last-of-type>p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+/* ==========================
+   SECTION ENHANCEMENTS
+========================== */
+
+.matchday-gallery,
+.team-training,
+.team-celebrations,
+.fans-supporters,
+.youth-academy,
+.community-events,
+section:last-of-type{
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    overflow: hidden;
+}
+
+.matchday-gallery h2,
+.team-training h2,
+.team-celebrations h2,
+.fans-supporters h2,
+.youth-academy h2,
+.community-events h2,
+section:last-of-type h2{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+}
+
+.matchday-gallery h2::after,
+.team-training h2::after,
+.team-celebrations h2::after,
+.fans-supporters h2::after,
+.youth-academy h2::after,
+.community-events h2::after,
+section:last-of-type h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #ffd700;
+    margin: 10px auto 0;
+    border-radius: 20px;
+}
+
+.matchday-gallery > p,
+.team-training > p,
+.team-celebrations > p,
+.fans-supporters > p,
+.youth-academy > p,
+.community-events > p,
+section:last-of-type > p{
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.matchday-gallery hr,
+.team-training hr,
+.team-celebrations hr,
+.fans-supporters hr,
+.youth-academy hr,
+.community-events hr{
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 40px 0;
+}
+
+/* Dark Mode */
+
+body.dark-mode .matchday-gallery,
+body.dark-mode .team-training,
+body.dark-mode .team-celebrations,
+body.dark-mode .fans-supporters,
+body.dark-mode .youth-academy,
+body.dark-mode .community-events,
+body.dark-mode section:last-of-type{
+    background: #1f1f1f;
+    box-shadow: 0 8px 24px rgba(0,0,0,.45);
+}
+
+body.dark-mode .matchday-gallery h2,
+body.dark-mode .team-training h2,
+body.dark-mode .team-celebrations h2,
+body.dark-mode .fans-supporters h2,
+body.dark-mode .youth-academy h2,
+body.dark-mode .community-events h2,
+body.dark-mode section:last-of-type h2{
+    color: #ffd700;
+}
+
+body.dark-mode .matchday-gallery > p,
+body.dark-mode .team-training > p,
+body.dark-mode .team-celebrations > p,
+body.dark-mode .fans-supporters > p,
+body.dark-mode .youth-academy > p,
+body.dark-mode .community-events > p,
+body.dark-mode section:last-of-type > p{
+    color: #ddd;
+}
+
+/* ==========================
+   IMAGE CARDS
+========================== */
+
+.matchday-gallery div,
+.team-training div,
+.team-celebrations+div,
+.team-celebrations+div+div,
+.team-celebrations+div+div+div,
+.team-celebrations+div+div+div+div,
+.fans-supporters div,
+.youth-academy div,
+.community-events div,
+section:last-of-type div {
+    display: inline-block;
+    width: 260px;
+    background: #fff;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .12);
+    vertical-align: top;
+    transition: .35s;
+}
+
+.matchday-gallery div:hover,
+.team-training div:hover,
+.team-celebrations+div:hover,
+.team-celebrations+div+div:hover,
+.team-celebrations+div+div+div:hover,
+.team-celebrations+div+div+div+div:hover,
+.fans-supporters div:hover,
+.youth-academy div:hover,
+.community-events div:hover,
+section:last-of-type div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, .2);
+}
+/* ==========================
+   GALLERY CARD ADDITIONS
+========================== */
+
+.matchday-gallery div,
+.team-training div,
+.team-celebrations+div,
+.team-celebrations+div+div,
+.team-celebrations+div+div+div,
+.team-celebrations+div+div+div+div,
+.fans-supporters div,
+.youth-academy div,
+.community-events div,
+section:last-of-type div{
+    overflow: hidden;
+    border-top: 5px solid #0b6623;
+}
+
+.matchday-gallery img,
+.team-training img,
+.team-celebrations+div img,
+.team-celebrations+div+div img,
+.team-celebrations+div+div+div img,
+.team-celebrations+div+div+div+div img,
+.fans-supporters img,
+.youth-academy img,
+.community-events img,
+section:last-of-type img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.matchday-gallery div:hover img,
+.team-training div:hover img,
+.team-celebrations+div:hover img,
+.team-celebrations+div+div:hover img,
+.team-celebrations+div+div+div:hover img,
+.team-celebrations+div+div+div+div:hover img,
+.fans-supporters div:hover img,
+.youth-academy div:hover img,
+.community-events div:hover img,
+section:last-of-type div:hover img{
+    transform: scale(1.08);
+}
+
+.matchday-gallery h3,
+.team-training h3,
+.team-celebrations+div h3,
+.team-celebrations+div+div h3,
+.team-celebrations+div+div+div h3,
+.team-celebrations+div+div+div+div h3,
+.fans-supporters h3,
+.youth-academy h3,
+.community-events h3,
+section:last-of-type h3{
+    color: #0b6623;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+}
+
+.matchday-gallery p,
+.team-training p,
+.team-celebrations+div p,
+.team-celebrations+div+div p,
+.team-celebrations+div+div+div p,
+.team-celebrations+div+div+div+div p,
+.fans-supporters p,
+.youth-academy p,
+.community-events p,
+section:last-of-type p{
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Dark Mode */
+
+body.dark-mode .matchday-gallery div,
+body.dark-mode .team-training div,
+body.dark-mode .team-celebrations+div,
+body.dark-mode .team-celebrations+div+div,
+body.dark-mode .team-celebrations+div+div+div,
+body.dark-mode .team-celebrations+div+div+div+div,
+body.dark-mode .fans-supporters div,
+body.dark-mode .youth-academy div,
+body.dark-mode .community-events div,
+body.dark-mode section:last-of-type div{
+    background: #1f1f1f;
+    border-top-color: #ffd700;
+}
+
+body.dark-mode .matchday-gallery h3,
+body.dark-mode .team-training h3,
+body.dark-mode .team-celebrations+div h3,
+body.dark-mode .team-celebrations+div+div h3,
+body.dark-mode .team-celebrations+div+div+div h3,
+body.dark-mode .team-celebrations+div+div+div+div h3,
+body.dark-mode .fans-supporters h3,
+body.dark-mode .youth-academy h3,
+body.dark-mode .community-events h3,
+body.dark-mode section:last-of-type h3{
+    color: #ffd700;
+}
+
+body.dark-mode .matchday-gallery p,
+body.dark-mode .team-training p,
+body.dark-mode .team-celebrations+div p,
+body.dark-mode .team-celebrations+div+div p,
+body.dark-mode .team-celebrations+div+div+div p,
+body.dark-mode .team-celebrations+div+div+div+div p,
+body.dark-mode .fans-supporters p,
+body.dark-mode .youth-academy p,
+body.dark-mode .community-events p,
+body.dark-mode section:last-of-type p{
+    color: #ddd;
+}
+/* ==========================
+   IMAGES
+========================== */
+
+img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 15px 0 10px;
+    color: #0b6623;
+}
+
+div p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* ==========================
+   HEADER IMAGES
+========================== */
+
+header nav div{
+    display: none;
+}
+
+/* ==========================
+   HORIZONTAL DIVIDER
+========================== */
+
+hr{
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right,
+        transparent,
+        #0b6623,
+        #ffd700,
+        #0b6623,
+        transparent);
+    border-radius: 50px;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode hr{
+    background: linear-gradient(to right,
+        transparent,
+        #4caf50,
+        #ffd700,
+        #4caf50,
+        transparent);
+}
+/* ==========================
+   EXTRA GALLERY SECTION
+========================== */
+
+.extra-gallery h2{
+    text-align: center;
+    color: #0b6623;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    background: #0b6623;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode {
+    background: #111;
+}
+
+body.dark-mode .matchday-gallery,
+body.dark-mode .team-training,
+body.dark-mode .team-celebrations,
+body.dark-mode .fans-supporters,
+body.dark-mode .youth-academy,
+body.dark-mode .community-events,
+body.dark-mode section:last-of-type {
+    color: #eee;
+}
+
+body.dark-mode .matchday-gallery div,
+body.dark-mode .team-training div,
+body.dark-mode .team-celebrations+div,
+body.dark-mode .team-celebrations+div+div,
+body.dark-mode .team-celebrations+div+div+div,
+body.dark-mode .team-celebrations+div+div+div+div,
+body.dark-mode .fans-supporters div,
+body.dark-mode .youth-academy div,
+body.dark-mode .community-events div,
+body.dark-mode section:last-of-type div {
+    background: #1d1d1d;
+}
+
+body.dark-mode h3 {
+    color: #ffd700;
+}
+
+body.dark-mode p {
+    color: #ddd;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px) {
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .matchday-gallery div,
+    .team-training div,
+    .team-celebrations+div,
+    .team-celebrations+div+div,
+    .team-celebrations+div+div+div,
+    .team-celebrations+div+div+div+div,
+    .fans-supporters div,
+    .youth-academy div,
+    .community-events div,
+    section:last-of-type div {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
