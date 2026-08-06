@@ -18,7 +18,7 @@ body {
    Hero Section
 ========================= */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    background: linear-gradient(rgba(14, 13, 13, 0.6), rgba(0,0,0,0.6)),
     url("../images/football.jpg") center/cover no-repeat;
     color: white;
     text-align: center;
@@ -34,6 +34,7 @@ body {
     max-width: 700px;
     margin: auto;
     font-size: 1.1rem;
+    color:rgb(247, 241, 230)
 }
 
 .hero-buttons {
