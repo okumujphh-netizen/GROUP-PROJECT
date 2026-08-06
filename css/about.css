@@ -147,32 +147,12 @@
     color: #0b6623;
 }
 
-/* Footer */
-footer{
-    background: linear-gradient(135deg, #0b6623, #087830);
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-}
-::selection{
-    background:#0b6623;
-    color:white;
-}
+
 
 /* Responsive Design */
 @media(max-width:768px){
 
-    header h1{
-        font-size: 2rem;
-    }
 
-    nav ul{
-        flex-direction: column;
-        gap: 10px;
-    }
 
     .about{
         padding: 30px 20px;
