@@ -458,40 +458,86 @@ section h2{
 
 
 
-/* ===========================
-   MOBILE RESPONSIVE
-=========================== */
-
-@media(max-width:768px){
 
 
-.news-hero h2{
 
-    font-size:30px;
 
+/* =========================
+   DARK MODE - NEWS PAGE
+========================= */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
 }
 
-
-section{
-
-    padding:35px 5%;
-
+body.dark-mode .featured-card,
+body.dark-mode .news-card,
+body.dark-mode .service-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
-
-.news-card,
-.featured-card{
-
-    width:100%;
-
+body.dark-mode .featured-card p,
+body.dark-mode .news-card p,
+body.dark-mode .service-card p,
+body.dark-mode .featured-card h3,
+body.dark-mode .news-card h3,
+body.dark-mode .service-card h3,
+body.dark-mode h2 {
+    color: #ffffff;
 }
 
-
-.newsletter{
-
-    margin:30px 5%;
-
+body.dark-mode input {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #555;
 }
 
+body.dark-mode input::placeholder {
+    color: #ccc;
+}
 
+body.dark-mode blockquote {
+    color: white;
+}
+
+body.dark-mode .newsletter {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .quick-links,
+body.dark-mode .academy-news,
+body.dark-mode .community-news,
+body.dark-mode .training-news,
+body.dark-mode .ticket-news,
+body.dark-mode .featured-news,
+body.dark-mode .latest-news,
+body.dark-mode .player-spotlight,
+body.dark-mode .sponsor-news,
+body.dark-mode .match-preview,
+body.dark-mode .manager-comments {
+    background-color: #181818;
+}
+/* ===== Manager Comments - Dark Mode ===== */
+
+body.dark-mode .manager-comments{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .manager-comments h2{
+    color: #4CAF50;
+}
+
+body.dark-mode .manager-comments blockquote{
+    color: #f5f5f5 !important;
+}
+
+body.dark-mode .manager-comments p{
+    color: #ffffff !important;
+}
+
+body.dark-mode .manager-comments strong{
+    color: #4CAF50;
 }
