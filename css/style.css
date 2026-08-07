@@ -222,6 +222,33 @@ table th{
     color:white;
 }
 
+/* Better box sizing */
+*{
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Responsive images */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive videos */
+video,
+iframe{
+    max-width: 100%;
+}
+
+/* Prevent horizontal scrolling */
+body{
+    overflow-x: hidden;
+}
+
 /* ===================================
    FOOTER
 =================================== */
@@ -233,39 +260,157 @@ footer{
     margin-top:50px;
 }
 
-/* ===================================
-   RESPONSIVE DESIGN
-=================================== */
-@media(max-width:768px){
+
+
+/* ==========================
+   Mobile Phones
+========================== */
+@media (max-width: 768px) {
 
     header{
-        flex-direction:column;
-        text-align:center;
-        gap:20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
     nav ul{
-        flex-direction:column;
-        width:100%;
-        gap:10px;
-        font-size:2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li{
+        width: 100%;
     }
 
     nav ul li a{
-        display:block;
-        width:100%;
-        flex-direction:column;
+        display: block;
+        width: 100%;
+        padding: 12px;
     }
 
     section{
-        padding:25px;
+        padding: 25px 15px;
     }
 
-    section h2{
-        font-size:1.7rem;
+    img{
+        max-width: 100%;
+        height: auto;
     }
 
-    main{
-        width:95%;
+    .btn{
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+}
+
+/* ==========================
+   Tablets
+========================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    section{
+        padding: 40px 30px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+}
+
+/* ==========================
+   Large Screens
+========================== */
+@media (min-width: 1025px) {
+
+    section{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+/* ==========================
+   Mobile Improvements
+========================== */
+
+@media (max-width: 768px) {
+
+    /* Reduce large headings */
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    /* Paragraphs */
+    p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Buttons */
+    .btn{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    /* Forms */
+    input,
+    textarea,
+    select,
+    button{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Tables */
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Cards */
+    .service-card,
+    .achievement-card,
+    .benefits div{
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Prevent horizontal scrolling */
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Videos and iframes */
+    iframe,
+    video{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make long words wrap */
+    *{
+        word-wrap: break-word;
+    }
+
+    /* Theme button */
+    .theme-btn{
+        width: auto;
+        margin-top: 10px;
     }
 }
