@@ -8,104 +8,107 @@
 /* ===================================
    RESET
 =================================== */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.7;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
 }
+
 /* dark mode */
 
-body.dark-mode{
-    background:#121212;
-    color:white;
+body.dark-mode {
+    background: #121212;
+    color: white;
 }
 
-body.dark-mode header{
-    background:#000;
+body.dark-mode header {
+    background: #000;
 }
 
-body.dark-mode footer{
-    background:#000;
+body.dark-mode footer {
+    background: #000;
 }
 
-body.dark-mode section{
-    background:#1e1e1e;
+body.dark-mode section {
+    background: #1e1e1e;
 }
 
-body.dark-mode .btn{
-    background:green;
-    color:white;
+body.dark-mode .btn {
+    background: green;
+    color: white;
 }
 
 
 /* ===================================
    BUTTON TOGGLE DARK MODE
 =================================== */
-.theme-btn{
-    background:#0b6623;
-    color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:15px;
-    font-weight:bold;
-    transition:0.3s ease;
+.theme-btn {
+    background: #0b6623;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-.theme-btn:hover{
-    background:#0d7d2b;
-    transform:translateY(-2px);
+.theme-btn:hover {
+    background: #0d7d2b;
+    transform: translateY(-2px);
 }
 
-.theme-btn:active{
-    transform:scale(0.98);
+.theme-btn:active {
+    transform: scale(0.98);
 }
+
 /* ===================================
    LINKS
 =================================== */
-a{
-    text-decoration:none;
-    transition:.3s ease;
+a {
+    text-decoration: none;
+    transition: .3s ease;
 }
 
 /* ===================================
    HEADER
 =================================== */
-header{
-    background: linear-gradient(135deg,#0B6623,#087830);
-    color:#fff;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
-}
-header h1{
-    font-size:2rem;
-    font-weight:700;
+header {
+    background: linear-gradient(135deg, #0B6623, #087830);
+    color: #fff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
 
-   /* ===================================
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ===================================
    NAVIGATION
 =================================== */
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -114,7 +117,7 @@ nav ul{
     flex-wrap: wrap;
 }
 
-nav ul li a{
+nav ul li a {
     display: inline-block;
     color: white;
     font-size: 0.9rem;
@@ -125,7 +128,7 @@ nav ul li a{
 }
 
 nav ul li a:hover,
-nav ul li a.active{
+nav ul li a.active {
     background: #FFD700;
     color: #0B6623;
 }
@@ -134,283 +137,274 @@ nav ul li a.active{
 /* ===================================
    MAIN CONTENT
 =================================== */
-main{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
 }
+
 /* ===================================
    COMMON SECTION
 =================================== */
-section{
-    background:#fff;
-    padding:45px;
-    border-radius:15px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    margin-bottom:40px;
-    transition:all .3s ease;
+section {
+    background: #fff;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    margin-bottom: 40px;
+    transition: all .3s ease;
 }
 
-section:hover{
-    transform:translateY(-5px);
-    box-shadow:0 18px 35px rgba(0,0,0,.12);
-}
-section h2{
-    color:#0B6623;
-    margin-bottom:25px;
-    font-size:2.2rem;
-    position:relative;
-    display:inline-block;
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
 }
 
-section h2::after{
-    content:"";
-    display:block;
-    width:70px;
-    height:4px;
-    background:#FFD700;
-    margin-top:8px;
-    border-radius:5px;
+section h2 {
+    color: #0B6623;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    position: relative;
+    display: inline-block;
 }
-section p{
-    margin-bottom:18px;
-    color:#555;
-    line-height:1.9;
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #FFD700;
+    margin-top: 8px;
+    border-radius: 5px;
 }
+
+section p {
+    margin-bottom: 18px;
+    color: #555;
+    line-height: 1.9;
+}
+
 /* ===================================
    BUTTONS
 =================================== */
-.btn{
-    display:inline-block;
-    background:#0B6623;
-    color:white;
-    padding:12px 25px;
-    border-radius:6px;
-    font-weight:600;
+.btn {
+    display: inline-block;
+    background: #0B6623;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
 }
 
-.btn:hover{
-    background:#FFD700;
-    color:#0B6623;
+.btn:hover {
+    background: #FFD700;
+    color: #0B6623;
 }
 
 /* ===================================
    IMAGES
 =================================== */
-img{
-    max-width:100%;
-    display:block;
-    border-radius:10px;
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
 }
 
 /* ===================================
    TABLES
 =================================== */
-table{
-    width:100%;
-    border-collapse:collapse;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 table th,
-table td{
-    padding:12px;
-    border:1px solid #ddd;
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
 }
 
-table th{
-    background:#0B6623;
-    color:white;
+table th {
+    background: #0B6623;
+    color: white;
 }
 
-/* Better box sizing */
-*{
-    box-sizing: border-box;
-}
 
-/* Smooth scrolling */
-html{
-    scroll-behavior: smooth;
-}
 
-/* Responsive images */
-img{
-    max-width: 100%;
-    height: auto;
-}
 
-/* Responsive videos */
-video,
-iframe{
-    max-width: 100%;
-}
-
-/* Prevent horizontal scrolling */
-body{
-    overflow-x: hidden;
-}
 
 /* ===================================
    FOOTER
 =================================== */
-footer{
-    background:#0B6623;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
+footer {
+    background: #0B6623;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 
 
 /* ==========================
-   Mobile Phones
+   MOBILE (PHONES)
 ========================== */
-@media (max-width: 768px) {
 
-    header{
+@media (max-width:768px) {
+
+    header {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
         text-align: center;
-        gap: 20px;
     }
 
-    nav ul{
+    nav {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+        padding: 0;
     }
 
-    nav ul li{
+    nav ul li {
+        list-style: none;
         width: 100%;
     }
 
-    nav ul li a{
+    nav ul li a {
         display: block;
         width: 100%;
-        padding: 12px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 18px;
     }
 
-    section{
-        padding: 25px 15px;
-    }
-
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .btn{
-        display: block;
-        width: 100%;
-        max-width: 280px;
-        margin: 10px auto;
-    }
-}
-
-/* ==========================
-   Tablets
-========================== */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    section{
-        padding: 40px 30px;
-    }
-
-    nav ul{
-        gap: 15px;
-    }
-}
-
-/* ==========================
-   Large Screens
-========================== */
-@media (min-width: 1025px) {
-
-    section{
-        max-width: 1200px;
+    main,
+    section {
+        width: 95%;
         margin: auto;
+        padding: 20px 15px;
     }
-}
-/* ==========================
-   Mobile Improvements
-========================== */
 
-@media (max-width: 768px) {
-
-    /* Reduce large headings */
-    h1{
+    h1 {
         font-size: 2rem;
     }
 
-    h2{
+    h2 {
         font-size: 1.6rem;
     }
 
-    h3{
+    h3 {
         font-size: 1.2rem;
     }
 
-    /* Paragraphs */
-    p{
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    /* Buttons */
-    .btn{
-        width: 100%;
-        max-width: 300px;
-        margin: 10px auto;
-    }
-
-    /* Forms */
-    input,
-    textarea,
-    select,
-    button{
-        width: 100%;
+    p {
         font-size: 16px;
     }
 
-    /* Tables */
-    table{
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .btn {
         display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        width: 100%;
+        margin: 10px 0;
     }
 
-    /* Cards */
-    .service-card,
-    .achievement-card,
-    .benefits div{
-        margin-bottom: 20px;
+    footer {
+        padding: 30px 20px;
     }
 
-    /* Footer */
-    footer ul{
+    footer ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Prevent horizontal scrolling */
-    body{
+    html,
+    body {
         overflow-x: hidden;
     }
 
-    /* Videos and iframes */
-    iframe,
-    video{
-        width: 100%;
+    img {
+        max-width: 100%;
         height: auto;
+        display: block;
     }
 
-    /* Make long words wrap */
-    *{
+    section {
+        margin-bottom: 40px;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    * {
         word-wrap: break-word;
     }
 
-    /* Theme button */
-    .theme-btn{
-        width: auto;
-        margin-top: 10px;
+    html {
+        scroll-behavior: smooth;
     }
+
+    button,
+    .btn,
+    nav a {
+        min-height: 44px;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    * {
+        transition: .3s ease;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-card,
+    .achievement-card,
+    .benefits div {
+        overflow: hidden;
+    }
+
+    .btn {
+        cursor: pointer;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+@media (max-width:768px) {
+
+    section>* {
+        margin-bottom: 15px;
+    }
+
 }
