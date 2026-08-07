@@ -1,44 +1,35 @@
 /* =========================
-Hero Section (Services Page)
+   Hero Section (Services Page)
 ========================= */
 
 .hero {
-    background:
-        linear-gradient(rgba(11, 102, 35, .75), rgba(11, 102, 35, .75)),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
-
-
-    color: white;
+    color: rgb(247, 245, 245);
     text-align: center;
     padding: 100px 20px;
+    background: linear-gradient(rgba(11, 102, 35, .85), rgba(11, 102, 35, .85)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
 }
-
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color:gold;
+    color: gold;
 }
-
 
 .hero-content p {
     max-width: 700px;
     margin: auto;
     font-size: 18px;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 
-
 /* =========================
-Services Cards
+   Services Cards
 ========================= */
-
 
 .services {
     padding: 60px 8%;
 }
-
 
 .services h2 {
     text-align: center;
@@ -46,88 +37,108 @@ Services Cards
     margin-bottom: 40px;
 }
 
-
 .services-container {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-
 }
 
-
 .service-card {
-
     background: white;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     transition: .3s;
-
 }
-
 
 .service-card:hover {
-
     transform: translateY(-8px);
-
 }
-
 
 .service-card h3 {
-
     color: #0b6623;
     margin-bottom: 15px;
-
 }
-
 
 .service-card h4 {
-
     margin-top: 20px;
     color: #333;
-
 }
-
 
 .service-card ul {
-
     margin-left: 20px;
-
 }
 
+
+/* =========================
+   Training Schedule
+========================= */
+
+.training-schedule {
+    padding: 60px 8%;
+    background: white;
+}
+
+.training-schedule h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b8a35;
+}
+
+.training-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.training-schedule th,
+.training-schedule td {
+    border: 2px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.training-schedule th {
+    background: #0b8a35;
+    color: white;
+}
+
+.training-schedule tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.training-schedule tr:hover {
+    background: #dff5e5;
+}
 
 
 /* =========================
    WHY CHOOSE US
 ========================= */
 
-.why-choose{
+.why-choose {
     max-width: 1200px;
     margin: 60px auto;
     padding: 60px 40px;
     text-align: center;
-    background:
-        linear-gradient(rgba(11,102,35,.85), rgba(11,102,35,.85)),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10")
-        center/cover no-repeat;
+    background: #0b6623;
     border-radius: 15px;
     color: white;
 }
 
-.why-choose h2{
+.why-choose h2 {
     color: gold;
     font-size: 2rem;
     margin-bottom: 35px;
 }
 
-.benefits{
+.benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 20px;
 }
 
-.benefits div{
+.benefits div {
     background: rgba(255,255,255,.15);
     border: 1px solid rgba(255,255,255,.25);
     padding: 20px;
@@ -138,183 +149,124 @@ Services Cards
     transition: .3s;
 }
 
-.benefits div:hover{
+.benefits div:hover {
     transform: translateY(-8px);
     background: rgba(255,255,255,.25);
     box-shadow: 0 10px 20px rgba(0,0,0,.25);
 }
 
 
-
 /* =========================
-Achievements
+   Achievements
 ========================= */
 
 .achievements {
-
     padding: 60px 8%;
-
-    background:
-        linear-gradient(rgba(11, 102, 35, .75), rgba(11, 102, 35, .75)),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
-
+    background: #0b6623;
     color: white;
     text-align: center;
-
 }
-
 
 .achievements h2 {
-
     color: gold;
-
 }
 
-
-
 .achievement-container {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-
 }
 
-
-
 .achievement-card {
-
     background: rgba(255, 255, 255, .15);
     padding: 25px;
     border-radius: 10px;
-
 }
-
-
 
 .achievement-card h3 {
-
     font-size: 2rem;
     color: gold;
-
 }
-
-
 
 .achievement-card p {
-
     margin-top: 10px;
     color: whitesmoke;
-
 }
-
 
 
 /* =========================
-Call To Action
+   Call To Action
 ========================= */
 
-
 .cta {
-
     text-align: center;
     padding: 70px 20px;
-
-    background:
-        linear-gradient(rgba(11, 102, 35, .75), rgba(11, 102, 35, .75)),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10") center/cover no-repeat;
-
-
+    background: #0b6623;
     color: white;
     border-radius: 15px;
     margin: 50px auto;
     max-width: 1200px;
-
 }
 
-
-
 .cta h2 {
-
     font-size: 2rem;
     margin-bottom: 20px;
     color: gold;
-
 }
 
-
-
 .cta p {
-
     max-width: 700px;
     margin: auto;
     font-size: 18px;
     color: whitesmoke;
-
 }
-
-
 
 .cta-buttons {
-
     margin-top: 30px;
-
 }
-
 
 
 /* =========================
-Ticket Form
+   Ticket Form
 ========================= */
 
-
 .ticket-form {
-
     display: none;
     margin-top: 20px;
     padding: 25px;
     background: #f8f8f8;
     border-radius: 12px;
     border-top: 4px solid #0b6623;
-
 }
 
-
-
 .ticket-form input {
-
     width: 90%;
     padding: 12px;
     margin: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
-
 }
-
-
 
 #ticketMessage {
-
     margin-top: 15px;
     font-weight: bold;
-
 }
-
-
 
 
 /* =========================
-HTML SMOOTH SCROLL
+   HTML SMOOTH SCROLL
 ========================= */
+
 html {
     scroll-behavior: smooth;
 }
+
 
 /* =========================
    FOOTER
 ========================= */
 
-footer{
+footer {
     background: #0b6623;
     color: #fff;
     padding: 50px 20px;
@@ -322,13 +274,13 @@ footer{
     margin-top: 60px;
 }
 
-footer h3{
+footer h3 {
     color: gold;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
-footer ul{
+footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -338,32 +290,198 @@ footer ul{
     padding: 0;
 }
 
-footer ul li{
+footer ul li {
     display: inline-block;
 }
 
-footer ul li a{
+footer ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     transition: .3s;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
     color: gold;
 }
 
-footer p{
+footer p {
     margin: 8px 0;
     color: #f5f5f5;
     font-size: 16px;
     line-height: 1.6;
 }
 
-footer p:last-child{
+footer p:last-child {
     margin-top: 25px;
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,.3);
     color: #ddd;
     font-size: 15px;
+}
+
+
+/* =========================
+   JAVASCRIPT INTERACTIONS
+========================= */
+
+
+/* =========================
+   Dark Mode
+========================= */
+
+body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .services {
+    background: #121212;
+}
+
+body.dark-mode .services h2 {
+    color: gold;
+}
+
+body.dark-mode .service-card {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-mode .service-card h3 {
+    color: gold;
+}
+
+body.dark-mode .service-card h4 {
+    color: #ddd;
+}
+
+body.dark-mode .training-schedule {
+    background: #181818;
+}
+
+body.dark-mode .training-schedule table {
+    background: #1e1e1e;
+}
+
+body.dark-mode .training-schedule td {
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode .training-schedule tr:nth-child(even) {
+    background: #292929;
+}
+
+body.dark-mode .ticket-form {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode .ticket-form input {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+
+/* =========================
+   Selected Training Row
+========================= */
+
+.training-schedule tr.selected-row {
+    background: #c8f7c5 !important;
+    color: #111;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Selected Service Card
+========================= */
+
+.service-card.active-service {
+    transform: translateY(-8px) scale(1.02);
+    border: 3px solid gold;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   Achievement Animation
+========================= */
+
+.achievement-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.achievement-card.show-achievement {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Ticket Message
+========================= */
+
+#ticketMessage {
+    padding: 10px;
+    color: #0b6623;
+}
+
+body.dark-mode #ticketMessage {
+    color: #90ee90;
+}
+
+
+/* =========================
+   Button Animation
+========================= */
+
+.btn {
+    transition: transform 0.15s ease, background 0.3s ease;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .training-schedule {
+        overflow-x: auto;
+    }
+
+    .training-schedule table {
+        min-width: 650px;
+    }
+
+    .ticket-form input {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .why-choose {
+        margin: 30px 15px;
+        padding: 40px 20px;
+    }
+
+    .cta {
+        margin: 30px 15px;
+    }
+
 }
