@@ -1,156 +1,230 @@
 # ⚽ Victory Football Club Website
 
-A modern, responsive football club website developed using **HTML5** and **CSS3** as part of a group web development project.
-
-## 📌 Project Overview
-
-The Victory Football Club website provides visitors with information about the club, including:
-
-- Home page
-- About the club
-- Services
-- Gallery
-- Contact information
-
-The website is designed to be responsive, user-friendly, and visually appealing.
+A modern, responsive football club website developed using **HTML, CSS, and JavaScript**. The website showcases the club's history, services, fixtures, results, players, gallery, news, and provides interactive features for supporters and academy players.
 
 ---
 
-## 🚀 Features
+## 📖 Project Overview
 
-- Responsive navigation bar
-- Hero section with call-to-action
-- Club information
-- Services page
-- Image gallery
-- Contact page
-- Footer with quick links
-- Responsive design for mobile, tablet, and desktop
+The Victory Football Club Website is designed to provide supporters, players, and visitors with all the information they need about the club.
+
+The website includes multiple pages, interactive forms, responsive layouts, and JavaScript-powered features to improve user experience.
 
 ---
 
-## 📁 Project Structure
+## ✨ Features
+
+- Responsive design
+- Modern football-themed interface
+- Dark Mode toggle
+- Hero sections with background images
+- Smooth scrolling navigation
+- Interactive buttons
+- Join Academy registration form
+- Match ticket booking form
+- Contact form validation
+- Back-to-top button
+- Countdown timer to next match
+- FAQ accordion
+- Testimonials slider
+- Club history modal
+- League table page
+- Fixtures page
+- Results page
+- Latest news page
+- Gallery page
+- Fan Zone
+- First Team Squad page
+
+---
+
+## 📂 Project Structure
 
 ```
 GROUP-PROJECT/
+│
+├── css/
+│   ├── style.css
+│   ├── homepage.css
+│   ├── about.css
+│   ├── services.css
+│   ├── gallery.css
+│   ├── contact.css
+│
+├── js/
+│   ├── script.js
+│   ├── services.js
+│   ├── contact.js
+│
+├── images/
 │
 ├── index.html
 ├── about.html
 ├── services.html
 ├── gallery.html
+├── fixtures.html
+├── results.html
+├── news.html
+├── leaguetable.html
+├── firstteamsquad.html
+├── fanzone.html
 ├── contact.html
-│
-├── css/
-│   ├── homepage.css
-│   ├── about.css
-│   ├── services.css
-│   ├── gallery.css
-│   └── contact.css
-│
-├── images/
-│   ├── logo.png
-│   ├── hero.jpg
-│   └── ...
 │
 └── README.md
 ```
 
 ---
 
-## 🛠 Technologies Used
+## 💻 Technologies Used
 
 - HTML5
 - CSS3
-- Git
-- GitHub
-- Visual Studio Code
+- JavaScript (ES6)
 
 ---
 
-## 💻 Installation
+## 📄 Website Pages
 
-1. Clone the repository
+### Home
+- Hero banner
+- Countdown timer
+- Latest news
+- League standings preview
+- Sponsors
+- Testimonials
+
+### About
+- Club history
+- Vision
+- Mission
+- Core values
+- FAQs
+
+### Services
+- Football academy
+- Coaching programmes
+- Community outreach
+- Talent scouting
+- Ticket booking
+- Academy registration
+
+### Gallery
+- Matchday photos
+- Training sessions
+- Celebrations
+- Youth academy
+- Community events
+
+### Fixtures
+Upcoming club fixtures.
+
+### Results
+Latest match results.
+
+### News
+Club announcements and latest news.
+
+### League Table
+Current league standings.
+
+### First Team
+Squad information.
+
+### Fan Zone
+Supporter information and engagement.
+
+### Contact
+- Contact details
+- Social media
+- Contact form
+- Club locations
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/GROUP-PROJECT.git
+git clone https://github.com/okumujphh-netizen/GROUP-PROJECT.git
 ```
 
-2. Navigate into the project
+### Open the project
+
+Open the project folder in **Visual Studio Code**.
+
+### Run the website
+
+Open `index.html` in your browser or use **Live Server**.
+
+---
+
+## 👥 Team Collaboration
+
+Git was used for version control.
+
+Typical workflow:
 
 ```bash
-cd GROUP-PROJECT
+git checkout groupwork
+
+git pull origin groupwork
+
+# Make changes
+
+git add .
+
+git commit -m "Describe your changes"
+
+git push origin groupwork
 ```
-
-3. Open the project in Visual Studio Code
-
-```bash
-code .
-```
-
-4. Open `index.html` in your browser.
 
 ---
 
 ## 📱 Responsive Design
 
-The website has been designed to work on:
+The website is optimized for:
 
-- 📱 Mobile phones
-- 📱 Tablets
-- 💻 Laptops
-- 🖥 Desktop computers
-
----
-
-## 👥 Team Members
-
-Add your team members here.
-
-Example:
-
-- John Okumu
-- Team Member 2
-- Team Member 3
-- Team Member 4
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
 
 ---
 
-## 🌟 Future Improvements
+## 🎯 Future Improvements
 
-- Online player registration
-- Match fixtures and results
-- League standings
-- Latest news section
-- Player profiles
+- User authentication
+- Online payments for tickets
+- Live match scores
+- Player statistics
+- Merchandise store
+- Match highlights
 - Admin dashboard
-- Live match updates
-- Sponsor section
-- Social media integration
+- Database integration
+- Online academy applications
+- Newsletter subscription
 
 ---
 
-## 📄 License
+## 📧 Contact
+
+**Victory Football Club**
+
+📍 Nairobi, Kenya
+
+📞 +254 700 000 000
+
+📧 info@victoryfc.com
+
+---
+
+## 📜 License
 
 This project was developed for educational purposes.
 
 ---
 
-## 📞 Contact
+## © 2026 Victory Football Club
 
-Victory Football Club
-
-Email: info@victoryfc.com
-
-Phone: +254 XXX XXX XXX
-
-Location: Nairobi, Kenya
-
----
-
-## 📸 Preview
-
-Open **index.html** in your browser to explore the website.
-
----
-
-**Developed with ❤️ by the Victory Football Club Project Team**
+All Rights Reserved.
