@@ -1,134 +1,249 @@
-// ===============================
-// Victory Football Club - services.js
-// ===============================
+// ========================================
+// VICTORY FOOTBALL CLUB - SERVICES.JS
+// ========================================
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("Victory Football Club Services Page Loaded");
+    // ========================================
+    // 1. DARK / LIGHT MODE
+    // ========================================
 
-    // ==========================================
-    // Welcome Message
-    // ==========================================
+    const themeBtn = document.getElementById("themeBtn");
 
-    setTimeout(function () {
-        alert("Welcome to Victory Football Club Services!");
-    }, 500);
+    if (themeBtn) {
 
-    // ==========================================
-    // Smooth Scrolling
-    // ==========================================
+        themeBtn.addEventListener("click", function () {
 
-    const links = document.querySelectorAll('a[href^="#"]');
+            document.body.classList.toggle("dark-mode");
 
-    links.forEach(function(link){
+            if (document.body.classList.contains("dark-mode")) {
+                themeBtn.textContent = "☀️ Light Mode";
+            } else {
+                themeBtn.textContent = "🌙 Dark Mode";
+            }
 
-        link.addEventListener("click", function(e){
+        });
 
-            e.preventDefault();
+    }
 
-            const target = document.querySelector(this.getAttribute("href"));
 
-            if(target){
+    // ========================================
+    // 2. TICKET FORM SHOW / HIDE
+    // ========================================
 
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
+    const buyTicket = document.getElementById("buyTicket");
+    const ticketForm = document.getElementById("ticketForm");
+
+    if (buyTicket && ticketForm) {
+
+        ticketForm.style.display = "none";
+
+        buyTicket.addEventListener("click", function () {
+
+            if (ticketForm.style.display === "none") {
+
+                ticketForm.style.display = "block";
+                buyTicket.textContent = "Close Booking Form";
+
+            } else {
+
+                ticketForm.style.display = "none";
+                buyTicket.textContent = "Buy Tickets";
 
             }
 
         });
 
-    });
+    }
 
-    // ==========================================
-    // Service Card Hover Effect
-    // ==========================================
 
-    const cards = document.querySelectorAll(".service-card");
+    // ========================================
+    // 3. TICKET BOOKING VALIDATION
+    //    + TICKET PRICE CALCULATOR
+    // ========================================
 
-    cards.forEach(function(card){
+    const submitTicket = document.getElementById("submitTicket");
 
-        card.addEventListener("mouseenter", function(){
+    const buyerName = document.getElementById("buyerName");
 
-            this.style.transform = "scale(1.03)";
-            this.style.transition = "0.3s";
+    const buyerEmail = document.getElementById("buyerEmail");
+
+    const ticketNumber = document.getElementById("ticketNumber");
+
+    const ticketMessage = document.getElementById("ticketMessage");
+
+
+    if (submitTicket) {
+
+        submitTicket.addEventListener("click", function () {
+
+            const name = buyerName.value.trim();
+
+            const email = buyerEmail.value.trim();
+
+            const tickets = Number(ticketNumber.value);
+
+
+            // Check name
+            if (name === "") {
+
+                ticketMessage.textContent =
+                    "Please enter your full name.";
+
+                return;
+
+            }
+
+
+            // Check email
+            if (email === "" || !email.includes("@")) {
+
+                ticketMessage.textContent =
+                    "Please enter a valid email address.";
+
+                return;
+
+            }
+
+
+            // Check ticket quantity
+            if (tickets < 1 || isNaN(tickets)) {
+
+                ticketMessage.textContent =
+                    "Please enter at least one ticket.";
+
+                return;
+
+            }
+
+
+            // Calculate ticket price
+            const ticketPrice = 500;
+
+            const totalPrice = tickets * ticketPrice;
+
+
+            // Successful booking
+            ticketMessage.textContent =
+                `Thank you ${name}! Your request for ${tickets} ticket(s) has been received. Total price: KSh ${totalPrice}.`;
 
         });
 
-        card.addEventListener("mouseleave", function(){
+    }
 
-            this.style.transform = "scale(1)";
 
-        });
+    // ========================================
+    // 4. TRAINING SCHEDULE INTERACTION
+    // ========================================
 
-    });
+    const trainingRows =
+        document.querySelectorAll(".training-schedule tbody tr");
 
-    // ==========================================
-    // Buttons Click Effect
-    // ==========================================
 
-    const buttons = document.querySelectorAll(".btn");
+    trainingRows.forEach(function (row) {
 
-    buttons.forEach(function(button){
+        row.addEventListener("click", function () {
 
-        button.addEventListener("click", function(){
+            // Remove previous selection
+            trainingRows.forEach(function (otherRow) {
 
-            alert("Thank you for your interest in Victory Football Club!");
-
-        });
-
-    });
-
-    // ==========================================
-    // Training Table Highlight
-    // ==========================================
-
-    const rows = document.querySelectorAll(".training-schedule tbody tr");
-
-    rows.forEach(function(row){
-
-        row.addEventListener("click", function(){
-
-            rows.forEach(function(r){
-
-                r.style.backgroundColor = "";
+                otherRow.classList.remove("selected-row");
 
             });
 
-            this.style.backgroundColor = "#c8f7c5";
+
+            // Select clicked row
+            row.classList.add("selected-row");
 
         });
 
     });
 
-    // ==========================================
-    // Achievement Cards Animation
-    // ==========================================
 
-    const achievementCards = document.querySelectorAll(".achievement-card");
+    // ========================================
+    // 5. SERVICE CARD INTERACTION
+    // ========================================
 
-    const observer = new IntersectionObserver(function(entries){
+    const serviceCards =
+        document.querySelectorAll(".service-card");
 
-        entries.forEach(function(entry){
 
-            if(entry.isIntersecting){
+    serviceCards.forEach(function (card) {
 
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+        card.addEventListener("click", function () {
 
-            }
+            // Remove active state from other cards
+            serviceCards.forEach(function (otherCard) {
+
+                otherCard.classList.remove("active-service");
+
+            });
+
+
+            // Activate selected card
+            card.classList.add("active-service");
 
         });
 
     });
 
-    achievementCards.forEach(function(card){
 
-        card.style.opacity = "0";
-        card.style.transform = "translateY(40px)";
-        card.style.transition = "all 0.8s ease";
+    // ========================================
+    // 6. SCROLL REVEAL FOR ACHIEVEMENTS
+    // ========================================
+
+    const achievementCards =
+        document.querySelectorAll(".achievement-card");
+
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show-achievement");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+
+    achievementCards.forEach(function (card) {
 
         observer.observe(card);
+
+    });
+
+
+    // ========================================
+    // 7. BUTTON FEEDBACK
+    // ========================================
+
+    const buttons = document.querySelectorAll(".btn");
+
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            button.style.transform = "scale(0.95)";
+
+
+            setTimeout(function () {
+
+                button.style.transform = "scale(1)";
+
+            }, 150);
+
+        });
 
     });
 

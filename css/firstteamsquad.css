@@ -1,0 +1,205 @@
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    background:
+        linear-gradient(
+            rgba(11,102,35,.85),
+            rgba(11,102,35,.85)
+        ),
+       url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlelWGXnPAjWL4Gf4284lDepLcdGJaNNpagYSCdZkIJA&s=10")
+        center/cover no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color:gold;
+
+}
+
+.hero p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    color:whitesmoke;
+}
+
+
+/* ==========================
+   GENERAL SECTIONS
+========================== */
+
+.coach,
+.captain,
+.objectives,
+.training{
+    background: #fff;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.coach h2,
+.captain h2,
+.objectives h2,
+.training h2,
+.squad h2{
+    color: #0b6623;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coach h3,
+.captain h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.coach p,
+.captain p{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* ==========================
+   SQUAD TABLE
+========================== */
+
+.squad{
+    margin: 25px;
+    overflow-x: auto;
+}
+
+.squad table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.squad th{
+    background: #0b6623;
+    color: white;
+    padding: 15px;
+}
+
+.squad td{
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.squad tr:nth-child(even){
+    background: #f8f8f8;
+}
+
+.squad tr:hover{
+    background: #eaf7ee;
+}
+
+.position td{
+    background: #0b6623;
+    color: white;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+
+/* ==========================
+   OBJECTIVES
+========================== */
+
+.objectives ul{
+    list-style: none;
+    padding: 0;
+}
+
+.objectives li{
+    background: #f5f5f5;
+    margin: 12px 0;
+    padding: 15px;
+    border-left: 5px solid #0b6623;
+    border-radius: 8px;
+}
+
+
+/* ==========================
+   TRAINING
+========================== */
+
+.training ul{
+    list-style: none;
+    padding: 0;
+}
+
+.training li{
+    padding: 15px;
+    margin: 10px 0;
+    background: #f5f5f5;
+    border-left: 5px solid #0b6623;
+    border-radius: 8px;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark-mode .coach,
+.dark-mode .captain,
+.dark-mode .objectives,
+.dark-mode .training,
+.dark-mode .squad table{
+    background:#2b2b2b;
+    color:#fff;
+}
+
+.dark-mode .coach h2,
+.dark-mode .captain h2,
+.dark-mode .objectives h2,
+.dark-mode .training h2,
+.dark-mode .squad h2,
+.dark-mode .coach h3,
+.dark-mode .captain h3,
+.dark-mode .coach p,
+.dark-mode .captain p,
+.dark-mode .objectives li,
+.dark-mode .training li{
+    color:#fff;
+}
+
+.dark-mode .squad td{
+    background:#2b2b2b;
+    color:#fff;
+    border-bottom:1px solid #555;
+}
+
+.dark-mode .squad tr:nth-child(even) td{
+    background:#363636;
+}
+
+.dark-mode .squad tr:hover td{
+    background:#444;
+}
+
+.dark-mode .objectives li,
+.dark-mode .training li{
+    background:#363636;
+}
+
+.dark-mode .position td{
+    background:#0b6623;
+    color:#fff;
+}
