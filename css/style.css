@@ -86,7 +86,7 @@ a {
    HEADER
 =================================== */
 header {
-    background: rgba(0,0,0,.65);
+    background: rgba(0, 0, 0, .65);
     color: #fff;
     padding: 5px 8%;
     display: flex;
@@ -100,18 +100,19 @@ header {
     z-index: 1000;
     backdrop-filter: blur(6px);
     box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
-    
+
 }
 
 header h1 {
     font-size: 2rem;
     font-weight: 700;
 }
+
 /* ===================================
    HERO (ALL PAGES)
 =================================== */
 
-.hero{
+.hero {
     min-height: 100vh;
     padding-top: 120px;
 
@@ -290,6 +291,11 @@ footer {
     /* HEADER */
 
     header {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -334,10 +340,9 @@ footer {
     }
 
     /* HERO */
-
     .hero {
-        min-height: 100vh;
-        padding: 140px 20px 50px;
+        min-height: calc(100vh - 180px);
+        padding: 50px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -370,7 +375,7 @@ footer {
         margin-bottom: 40px;
     }
 
-    section > * {
+    section>* {
         margin-bottom: 15px;
     }
 
